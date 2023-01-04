@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.muslim.pay">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SansPay">
+        <activity android:name=".activity.VoucherTvActivity"></activity>
+        <activity android:name=".activity.PaketTelkomselActivity" />
+        <activity android:name=".activity.GasNegaraActivity" />
+        <activity android:name=".activity.VoucherInternetActivity" />
+        <activity android:name=".activity.PulsaPromoActivity" />
+        <activity android:name=".activity.PaketTlfonActivity" />
+        <activity android:name=".activity.ShopeePayActivity" />
+        <activity android:name=".activity.GrabDriverActivity" />
+        <activity android:name=".activity.GopayDriverActivity" />
+        <activity android:name=".activity.LeasingActivity" />
+        <activity android:name=".activity.TelpPascaActivity" />
+        <activity android:name=".activity.TelpKabelActivity" />
+        <activity android:name=".activity.KeretaApiActivity" />
+        <activity android:name=".activity.TelevisiActivity" />
+        <activity android:name=".activity.BpjsActivity" />
+        <activity android:name=".activity.WifiActivity" />
+        <activity android:name=".activity.AsuransiActivity" />
+        <activity android:name=".activity.PdamActivity" />
+        <activity android:name=".activity.ZakatActivity" />
+        <activity android:name=".activity.ETollActivity" />
+        <activity android:name=".activity.TransferBankActivity" />
+        <activity android:name=".activity.KirimSaldoActivity" />
+        <activity android:name=".activity.SignupActivity" />
+        <activity
+            android:name=".activity.OnboardingActivity"
+            android:noHistory="true" />
+        <activity android:name=".activity.PesanActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.LogoutActivity" />
+        <activity android:name=".activity.BonusActivity" />
+        <activity android:name=".activity.MembershipActivity" />
+        <activity android:name=".activity.MutasiActivity" />
+        <activity android:name=".activity.RedeemActivity" />
+        <activity android:name=".activity.ReferalActivity" />
+        <activity android:name=".activity.TagihanActivity" />
+        <activity android:name=".activity.GooglePlayActivity" />
+        <activity android:name=".activity.LayananTvActivity" />
+        <activity android:name=".activity.PlnActivity" />
+        <activity android:name=".activity.WifiIdActivity" />
+        <activity android:name=".activity.VoucherGameActivity" />
+        <activity android:name=".activity.EwalletActivity" />
+        <activity android:name=".activity.TransferPulsaActivity" />
+        <activity android:name=".activity.SmsPaketActivity" />
+        <activity android:name=".activity.TokenListrikActivity" />
+        <activity
+            android:name=".activity.SpashScreen"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:hardwareAccelerated="false"
+                    android:largeHeap="true" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".utilities.MyServices"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.PulsaActivity" />
+        <activity android:name=".activity.PaketDataActivity" />
+        <activity android:name=".activity.LainLain" />
+    </application>
+
+</manifest>
